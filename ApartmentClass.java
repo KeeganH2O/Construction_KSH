@@ -40,7 +40,7 @@ public class ApartmentClass extends ResidentialClass {
 	 */
 	public String displayData() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("==========================================");
+		sb.append("==========================================\n");
 		sb.append("Project Name: " + projectName + "\n");
 		sb.append("Address: "+ completeAddress + "\n");
 		sb.append("Square Feet: " + totalSquareFeet + "\n");
@@ -75,7 +75,5 @@ public class ApartmentClass extends ResidentialClass {
 	public void setParkingAvailable(boolean parkingAvailable) {
 		this.parkingAvailable = parkingAvailable;
 	}
-	
 
-	
 }

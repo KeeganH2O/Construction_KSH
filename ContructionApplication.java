@@ -3,6 +3,7 @@ public class ContructionApplication {
 
 	public static void main(String[] args) {
 		
+		//Building test
 		BuildingClass Building = new BuildingClass("Test Project","10501 Edgewater rd.", 3000.0, "Residential", "R1");
 		Building.Draw();
 		System.out.println(Building.displayData());
@@ -15,6 +16,19 @@ public class ContructionApplication {
 		SFH.setGarage(true);
 		System.out.println(SFH.displayData());
 		
+		//Buisness Test
+		BusinessClass Biz = new BusinessClass("Buisness Kmoney", "100000000000 ave.", 3000.0, "buisness", "f2");
+		Biz.setNumRentableUnits(2);
+		Biz.Draw();
+		System.out.println(Biz.DisplayData());
+		
+		//residential test
+		ResidentialClass Res = new ResidentialClass("Residential Class", "50000 bulivard.", 111130.0,"residential","g3");
+		Res.setNumBedrooms(5);
+		Res.setNumBathrooms(3);
+		Res.setLaundryRoom(true);
+		Res.Draw();
+		System.out.println(Res.DisplayData());
 		//Apartment Test
 		ApartmentClass AC = new ApartmentClass("Apartment", "1001 East St.", 2000.0,"Residential", "R2");
 		AC.setNumBedrooms(3);

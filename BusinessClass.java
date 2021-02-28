@@ -26,7 +26,11 @@ public class BusinessClass extends BuildingClass {
 	 * @param subgroup
 	 */
 	public BusinessClass(String projectName, String completeAddress, double totalSquareFeet,String occupancyGroup, String subgroup){
-		
+		this.projectName = projectName;
+		this.completeAddress = completeAddress;
+		this.totalSquareFeet = totalSquareFeet;
+		this.occupancyGroup = occupancyGroup;
+		this.subgroup = subgroup;
 	}
 	
 	/**
@@ -42,14 +46,12 @@ public class BusinessClass extends BuildingClass {
 	 */
 	public String DisplayData() {
 		StringBuilder sb = new StringBuilder("");
-		/*
 		sb.append("===================================\n");
 		sb.append("Project Name: " + projectName + "\n");
 		sb.append("Address: "+ completeAddress + "\n");
 		sb.append("Square Feet: " + totalSquareFeet + "\n");
 		sb.append("Occupancy Group: "+ occupancyGroup + "\n");
 		sb.append("Subgroup: "+ subgroup + "\n");
-		*/
 		sb.append("Rentable Units: "+numRentableUnits+"\n");
 		sb.append("===================================");
 		String r = sb.toString();
